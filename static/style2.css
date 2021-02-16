@@ -1,0 +1,76 @@
+.box {
+    max-width: 500px;
+    top: 60%;
+    left: 90%;
+    transform: translate(110%, 15%);
+    border: none;
+    padding: 10px 10px 10px 30px;
+    }
+  
+.location-box {
+    padding: 0 20px 20px;
+    background : transparent;
+    border-radius: 25px 5px 25px 5px;
+    }
+
+.location-box label {
+    margin-bottom: 5px;
+    font-family:Lucida Console;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #001a00;
+    }
+
+input[type = "datetime-local"] {
+     padding : 0px 0px 0px 30px;
+     border-radius: 5px 0px 5px 0px;
+     width: 200px;
+     height: 30px;
+     border: ridge;
+     background: transparent;
+     color: #001a00
+     }  
+ 
+.date-box label {
+    margin-bottom: 5px;
+    font-family:Lucida Console;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #001a00;
+    } 
+
+.location-box select {
+    padding : 0px 0px 0px 0px;
+    border-radius: 5px 0px 5px 0px;
+    width: 120px;
+    height: 30px;
+    border: ridge;
+    background: transparent;
+    }   
+
+input[type = "submit"] {
+    border-radius: 5px 0px 5px 0px;
+    width: 100px;
+    height: 30px;
+    border: ridge;
+    outline: none;
+    border-left: 6px solid blue;
+    background-color: lightgrey;
+    }
+ 
+.Airline-stop-box label {
+    margin-bottom: 5px;
+    font-family:Lucida Console;
+    margin-top: 10px;
+    font-size: 15px;
+    }  
+
+.Airline-stop-box select {
+    padding : 0px 0px 0px 10px;
+    border-radius: 5px 0px 5px 0px;
+    width: 300px;
+    height: 30px;
+    border: ridge;
+    background: transparent;
+    color: #001a00;
+    }   

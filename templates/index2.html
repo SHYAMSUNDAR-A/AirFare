@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "description"> <content = "This is a flight fare predictor web">
+        <title>Flight Fare Predictor</title>
+        <link rel = "stylesheet" href = "static/style2.css">
+        <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <body style = "background: url(static/image.png); background-size : 100%;">
+       <form action = "{{url_for ('check') }}" method = "POST">
+       <div class = "box">
+        <h1 style = "color:#2F4F4F; font-family:Lucida Console;"> Fly-Fare Predictor </h1>
+        <hr/>
+        
+           <div class = "location-box">
+               <label>Origin</label>
+                   <select name = "origin" required = "required">
+                        <option value = "DELHI">DELHI</option>
+                        <option value = "CHENNAI">CHENNAI</option>
+                        <option value = "BANGALORE">BANGALORE</option>
+                        <option value = "KOLKATA">KOLKATA</option>
+                        <option value = "MUMBAI">MUMBAI</option>
+                    </select>
+                <label>Destination</label>
+                   <select name = "destination" required = "required">
+                        <option value = "KOCHI">KOCHI</option>
+                        <option value = "HYDERABAD">HYDERABAD</option>
+                        <option value = "BANGALORE">BANGALORE</option>
+                        <option value = "KOLKATA">KOLKATA</option>
+                        <option value = "DELHI">DELHI</option>
+                    </select>
+            </div>
+            <hr/>
+            <div class = "date-box">
+               <label>Date of Departure</label>
+                    <input type="datetime-local" name="Departure_Time" id="Departure_Time" required="required">
+                <hr/>
+                <label>Date of Arrival</label>
+                    <input type="datetime-local" name="Arrival_Time" id="Arrival_Time" required="required">
+            </div>
+            <hr/>
+            <div class = "Airline-stop-box">
+               <label>Preferred_Airline</label>
+                   <select name = "airline" required = "required">
+                        <option value = "Spice_Jet">Spice_Jet</option>
+                        <option value = "Jet_Airways">Jet_Airways</option>
+                        <option value = "Air_India">Air_India</option>
+                        <option value = "Indigo">Indigo</option>
+                        <option value = "Multiple_carriers">Multiple_carriers</option>
+                        <option value = "GoAir">GoAir</option>
+                        <option value = "Vistara">Vistara</option>
+                        <option value = "Vistara_Premium_economy">Vistara_Premium_economy</option>
+                        <option value = "Air_Asia">Air_Asia</option>
+                        <option value = "Multiple_carriers_Premium_economy">Multiple_carriers_Premium_economy</option>
+                        <option value = "Jet_Airways_Business">Jet_Airways_Business</option>
+                        <option value = "Trujet">Trujet</option>
+                    </select>
+                    <hr/>
+                <label>No of Stops</label>
+                   <select name = "Stops" required = "required">
+                        <option value = "0">0 stop</option>
+                        <option value = "1">1 stop</option>
+                        <option value = "2">2 stop</option>
+                        <option value = "3">3 stop</option>
+                    </select>
+            </div>
+            <hr/>
+            <div class = "check">
+                <input type = "submit" value  = "Check">
+            </div>
+       </div>
+       </form>
+       <hr>
+       <hr>
+       <div class = "box">
+        <p style = "color:#000000; font-family:Lucida Console; font-size: 20px;">{{ myfare }}</p>
+       <hr/>
+       <hr/>
+    </body>
+</html>
